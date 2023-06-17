@@ -34,7 +34,19 @@ s[:2] + s[2:]
 s[:4] + s[4:]
 # Каждый вызов выведет - Hello!
 
+#Решение задач по Slice:
 
+def rotated_right(input_list):
+        return input_list[-1:] + input_list[:-1] 
+
+    print(rotated_right((1,2,3,4,5)))
+
+
+def rotated_left(input_list):
+        return input_list[1:] + input_list[:1]
+
+    print(rotated_left('ABCD'))
+          
 
 
 
