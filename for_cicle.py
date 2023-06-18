@@ -76,3 +76,17 @@
         pass
     original_list[:] []
     original_list.extend(new_list)
+
+
+
+
+    # Решение задачи на тему for:
+    
+    def find_index(value, collection):
+        for (index, element) in enumerate(collection):
+            if value == element:
+                return index
+
+
+    print(find_index(5, [1, 2, 3, 4, 5]))
+
