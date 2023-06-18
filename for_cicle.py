@@ -47,3 +47,19 @@
            continue
         print(line)
 
+    # Ветку else можно также использовать и в конструкции while как и break и continue:
+    tries = 3
+    while tries:
+        print('>>>', end=' ')
+        command = input()
+        if not command:
+            continue
+        if command in ('echo', 'cd', 'help'):
+            break
+        print("Неизвестная команда")
+        tries -= 1
+    else:
+        print('Много неверных попыток ввода, попробуйте позже')
+
+
+
