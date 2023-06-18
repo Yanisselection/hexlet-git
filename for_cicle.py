@@ -34,3 +34,16 @@
            break
    else:
        item = None
+
+   
+   # Возможность использования continue, если строка начинается с #, то цикл её пропускает:
+   lines = [
+    'one',
+    'two',
+    '# three',
+    'four'] 
+   for line in lines:
+       if line[:1] == '#':
+           continue
+        print(line)
+
