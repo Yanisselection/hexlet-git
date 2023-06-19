@@ -79,8 +79,20 @@
 
 # Zip перестает генерировать кортежи, как только заканчиваются элементы в любом из источников 
 
+# Задача по поиску совпадения минуя первый индекс 
+
+    def find_second_index(key, string):
+        coincidences = []
+        for (index, item) in enumerate(string):
+            if key == item:
+                coincidences.append(index)
+
+        if len(coincidences) < 2:
+            return None
+        return coincidences[1]
 
 
+    print(find_second_index('a', 'cata'))
 
 
 
